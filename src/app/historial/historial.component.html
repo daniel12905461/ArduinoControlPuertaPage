@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="ro">
+    <p class="h1">
+      Historial de Entradas y Salidas
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha-Hora Salida</th>
+            <th scope="col">Fecha-Hora Entrada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let historial of historials">
+            <th scope="row">1</th>
+            <td>{{ historial.user.name }}</td>
+            <td>{{ historial.fechaHoraSalida }}</td>
+            <td>{{ historial.fechaHoraEntrada }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
